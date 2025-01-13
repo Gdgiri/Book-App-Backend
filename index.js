@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3000", // Removed trailing slash
+    origin: "https://book-appgd.netlify.app/", // Removed trailing slash
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })

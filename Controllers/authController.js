@@ -109,7 +109,7 @@ export const forgotPassword = async (req, res) => {
       },
     });
 
-    const resetLink = `http://localhost:3000/reset-password/${resetToken}`;
+    const resetLink = `https://book-appgd.netlify.app/reset-password/${resetToken}`;
 
     const mailOptions = {
       to: email,

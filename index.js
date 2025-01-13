@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { MongoDB } from "./Database/config.js";
 import router from "./Routers/authRouter.js";
+import router1 from "./Routers/storyRouter.js";
 dotenv.config();
 
 // Middleware
@@ -42,6 +43,7 @@ app.get("/", (req, res) => {
 
 // API Routes
 app.use("/api/auth", router);
+app.use("/api/story", router1);
 // Listen
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

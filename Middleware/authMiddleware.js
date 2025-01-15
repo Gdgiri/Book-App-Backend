@@ -22,7 +22,7 @@ export const protect = async (req, res, next) => {
     } catch (error) {
       console.error("Token verification failed:", error.message);
       return res.status(401).json({
-        message: "Not authorized, invalid token",
+        message: "Not authorized, invalid token,please Logout and Login again",
       });
     }
   } else {
